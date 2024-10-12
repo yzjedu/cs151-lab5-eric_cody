@@ -28,27 +28,37 @@ while decision != "E":
     if decision == "D":
             deposit_value = input('Enter value you wish to deposit: ')
             deposit_value =float(deposit_value)
+
             if deposit_value < 0:
                 print('Please enter a positive value')
+
             elif deposit_value >= 0:
                 total_value = total_value + deposit_value
                 total_value = float(total_value)
                 print('Balance: ', total_value)
+
                 if total_value < 0:
                     print('WARNING: You will be charged 5% interest of your balance is under $0')
+
     elif decision == "W":
+
             withdraw_value = input('Enter value you wise to withdraw: ')
             withdraw_value = float(withdraw_value)
+
             if withdraw_value < 0:
                 print('Please enter a positive value')
+
             elif withdraw_value >= 0:
                 total_value = total_value - withdraw_value
                 total_value = float(total_value)
                 print('Balance: ', total_value)
+
                 if total_value < 0:
                     print('WARNING: You will be charged 5% interest of your balance is under $0')
+
     elif decision == "V":
             print('Balance: ', total_value)
+
     else:
             print('Enter a valid interaction')
 

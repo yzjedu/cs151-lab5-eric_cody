@@ -26,7 +26,7 @@ decision = decision.upper()
 while decision != "E":
 
     if decision == "D":
-            deposit_value = input('Enter value you wise to deposit: ')
+            deposit_value = input('Enter value you wish to deposit: ')
             deposit_value =float(deposit_value)
             if deposit_value < 0:
                 print('Please enter a positive value')

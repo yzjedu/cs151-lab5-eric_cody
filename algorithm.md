@@ -11,28 +11,36 @@
     i. if decision == D:
         a. Prompt user to enter the amount they wish to deposit, deposit_value
             i. convert deposit_value to float
-            ii. add deposit value to total value
-            iii. convert total value to float
-            iv. output to user their balance
+            ii. if deposit value < 0
+                    output to user to select a positive value
+                 otherwise if deposit value >= 0
+                    i. add deposit value to total value
+                    ii. convert total value to float
+                    iii. output to user their balance
         b. if total value < 0
             output to user "WARNING: You will be charged 5% interest if your balance is under $0.")
 
 
     ii. otherwise if decision == W:
         a. Prompt user to enter the amount they wish to withdraw, withdraw_value
-            if deposit_value < 0
-                display to user ("Enter a valid value to deposit")
+            i. convert withdraw_value to float
+            ii. if withdraw_value < 0
+                    output to user to select a positive value
+                 otherwise if withdraw_value >= 0
+                    i. subtract withdraw value from total value
+                    ii. convert total value to float
+                    iii. output to user their balance
 
-    V. Add withdraw_value to initial_value, store under total value
+        b. if total value < 0
+            output to user "WARNING: You will be charged 5% interest if your balance is under $0.")
 
-    VI. Display total_value to user
-         if total_value < 0:
-             display to user (WARNING: You will be charged 5% interest if your balance is under $0.")
-
-    VII otherwise if decision == V
+    iii. otherwise if decision == V
         a. Display to user total_value
 
-    VII otherwise 
+    iv. otherwise 
         a. Display to user ("Enter a valid interaction")
+
+    v. Prompt user to select D: Deposit, W: Withdraw, V: View Balance, or E: Exit,store under decision
+        a. use .upper() so capitalization doesn't matter
         
     

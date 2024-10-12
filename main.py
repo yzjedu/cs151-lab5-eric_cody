@@ -4,9 +4,9 @@
 # Due Date: October 16th, 2024
 # Lab Assignment: Lab 05
 # Problem Statement: Build a simulation of an ATM where users can view balance, deposit money, or withdraw money
-# Data In:
-# Data Out:
-# Credits:
+# Data In: decision (D, W, V, E), deposit_value (value of deposit), withdraw_value (value of withdraw)
+# Data Out: total_value (total amount left)
+# Credits: none other than class notes
 
 
 #Purpose of the lab

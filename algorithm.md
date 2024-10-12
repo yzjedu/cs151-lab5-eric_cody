@@ -8,6 +8,7 @@
     a. use .upper() so capitalization doesn't matter
 # 5. Set the SENTINEL to E
 # 6. While decision != E
+
     i. if decision == D:
         a. Prompt user to enter the amount they wish to deposit, deposit_value
             i. convert deposit_value to float
